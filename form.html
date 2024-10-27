@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="/eyafsa.github.io/css/form-style.css">
 </head>
 <body>
     <div id="wrapper">
@@ -34,42 +35,42 @@
 <section class="reserve">
     <form method="post" name="reservation" data-netlify="true">
         <div>   
-            <label for="firstName">First Name</label>
+            <label for="firstName">First Name:</label>
             <input type="text" name="firstName" id="firstName" placeholder="First name" required>
         </div>
 
         <div>   
-            <label for="lastName">Last Name</label>
+            <label for="lastName">Last Name:</label>
             <input type="text" name="lastName" id="lastName" placeholder="Last name" required>
         </div>
 
         <div>   
-            <label for="email">Email</label>
+            <label for="email">Email:</label>
             <input type="email" name="email" id="email" placeholder="Email" required>
         </div>
 
         <div>   
-            <label for="tel">Phone</label>
+            <label for="tel">Phone:</label>
             <input type="tel" name="phone" id="tel" placeholder="Phone" required>
         </div>
 
         <div>   
-            <label for="date">Check-in Date</label>
+            <label for="date">Check-in Date:</label>
             <input type="date" name="date" id="date">
         </div>
 
         <div>   
-            <label for="date">Check-out Date</label>
+            <label for="date">Check-out Date:</label>
             <input type="date" name="date" id="date" placeholder="Phone">
         </div>
 
         <div>   
-            <label for="number">Number of Guest (4 is Maximum)</label>
+            <label for="number">Number of Guest: (4 is Maximum)</label>
             <input type="number" name="number" id="number" min="1" max="4" required>
         </div>
 
         <div>
-            <label for="roomType">Room Type</label>
+            <label for="roomType">Room Type:</label>
 
             <select name="roomType" id="roomType">
                 <option value="chooseOne">Choose One</option>
@@ -78,8 +79,8 @@
             </select>
         </div>
 
-        <div>
-            <div>Ocean View (additional cost)</div>
+        <div class="radio">
+            <span>Ocean View: (additional cost)</span>
             <label for="view">Yes</label>
             <input type="radio" name="view" id="yes" value="yes">
         
@@ -88,12 +89,12 @@
         </div><br>
 
         <div>
-            <label for="request">List Allergies or Other Request</label>
+            <label for="request">List Allergies or Other Request:</label>
             <input type="text" name="request" id="request">
         </div>
 
         <div>
-            <label for="myfile">Upload Vaccine Proof</label>
+            <label for="myfile">Upload Vaccine Proof:</label>
             <input type="file" name="myfile" id="myfile">
         </div>
 
@@ -103,16 +104,18 @@
         </div>
 
         <div>
-            <label for="password">Create a password to return.  Username is your email.</label>
+            <label for="password">Create a password to return.  Username is your email:</label>
             <input type="text" name="password" id="password" placeholder="Password" required>
         </div>
 
         <div>
-            <input type="submit" value="Submit">
+            <button>
+            <input type="submit" value="Submit"></button>
         </div>
 
         <div>
-            <input type="reset" value="Reset">
+            <button>
+            <input type="reset" value="Reset"></button>
         </div>
     </form>
 </section>
