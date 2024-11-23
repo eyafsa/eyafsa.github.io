@@ -1,45 +1,145 @@
+
 html {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.25rem;
     line-height: 1.2;
     color: rgb(1, 106, 112);
     text-align: center;
-    
-}
-
-h1, h2, h3 {
+   
+ }
+ 
+ 
+ h1, h2, h3 {
     color: rgb(1, 106, 112);
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration-line: underline;
     text-decoration-style: wavy;
     text-decoration-color: color(rgb(210, 222, 50) 6px);
     text-underline-offset: 12px;
-    
-}
-
-h1 {
+   
+ }
+ 
+ 
+ h1 {
     font-size: 2.25rem;
-    
-}
-
-h1::before,
-h1::after {
+    opacity: 0%;
+ }
+ 
+ 
+ .fade-text {
+    animation: fadeTxt linear 7s 14s;
+    animation-fill-mode: forwards;
+ }
+ 
+ 
+ @keyframes fadeTxt {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        font-size: 2.75rem;
+    }
+    100% {
+        opacity: 1;
+        font-size: 3.25rem;
+    }
+ }
+ 
+ 
+ .fade-img {
+    animation: fadeImg 5s
+ }
+ 
+ 
+ @keyframes fadeImg {
+    0% {
+        opacity: 0;
+    }
+ 
+ 
+    100% {
+        opacity: 1;
+    }
+ }
+ 
+ 
+ p {
+    animation-duration: 3s;
+    animation-name: slide;
+ }
+ 
+ 
+ @keyframes slide {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+ 
+ 
+    }
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ main,
+ header {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.4;
+ }
+ 
+ 
+ h1::before,
+ h1::after {
     content: "\1F3D4";
-}
-
-h2 {
+ }
+ 
+ 
+ h2 {
     font-size: 1.6rem;
     text-decoration: none;
-}
-
-
-
-h2::before,
-h2::after {
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ h2::before,
+ h2::after {
     content: "\1F3D4";
-}
-
-nav li {
+ }
+ 
+ 
+ nav {
+    float: right;
+    position: sticky;
+    top: 0;
+    background-color: rgb(1, 106, 112);
+    width: 240px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ nav ul {
+    padding: 0;
+ }
+ 
+ 
+ nav li {
     font-size: 1.1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
@@ -47,35 +147,40 @@ nav li {
     list-style-type: none;
     text-transform: uppercase;
     color: rgb(162, 197, 121);
-}
-
-nav a,
-.assignments a,
-footer a {
+ }
+ 
+ 
+ nav a,
+ .assignments a,
+ footer a {
     text-decoration: none;
     color: rgb(162, 197, 121);
     line-height: 1.5;
-}
-
-nav a:link,
-nav a:visited {
+ }
+ 
+ 
+ nav a:link,
+ nav a:visited {
     line-height: 1.5;
-}
-
-nav a:hover,
-nav a:active {
+ }
+ 
+ 
+ nav a:hover,
+ nav a:active {
     text-decoration: underline dotted rgb(210, 222, 50);
     text-underline-offset: 6px;
     color: rgb(107, 138, 122)
-}
-
-nav a:hover,
-nav a::before {
+ }
+ 
+ 
+ nav a:hover,
+ nav a::before {
     content: "\1F3D4";
-}
-
-ul a,
-.assignments {
+ }
+ 
+ 
+ ul a,
+ .assignments {
     text-decoration: none;
     font-size: 1.1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -85,5 +190,25 @@ ul a,
     text-transform: uppercase;
     color: rgb(210, 222, 50);
     line-height: 2;
-}
-
+ }
+ 
+ 
+ footer {
+    line-height: 80%;
+    font-weight: 500;
+   
+ }
+ 
+ 
+ small {
+    float: right;
+    padding: 20px 0 40px 0;
+ }
+ /*
+ small {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    padding: 30px 0;
+ } */
+ 
